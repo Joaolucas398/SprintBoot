@@ -21,7 +21,7 @@ public class Produto {
 	@NotNull
 	private String nome;
 	@NotNull
-	private String preco;
+	private double preco;
 	@NotNull
 	private String codigo;
 	
@@ -48,11 +48,11 @@ public class Produto {
 		this.nome = nome;
 	}
 
-	public String getPreco() {
+	public double getPreco() {
 		return preco;
 	}
 
-	public void setPreco(String preco) {
+	public void setPreco(double preco) {
 		this.preco = preco;
 	}
 

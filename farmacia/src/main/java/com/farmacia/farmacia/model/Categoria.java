@@ -24,11 +24,11 @@ public class Categoria {
 	@NotNull
 	private String descricao;
 	@NotNull
-	private String antibiotico;
+	private boolean antibiotico;
 	@NotNull
-	private String antiinflamatorio;
+	private boolean antiinflamatorio;
 	@NotNull
-	private String analgesico;
+	private boolean analgesico;
 	
 	@OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("categoria")
@@ -46,27 +46,27 @@ public class Categoria {
 		this.id = id;
 	}
 
-	public String getAntibiotico() {
+	public boolean getAntibiotico() {
 		return antibiotico;
 	}
 
-	public void setAntibiotico(String antibiotico) {
+	public void setAntibiotico(boolean antibiotico) {
 		this.antibiotico = antibiotico;
 	}
 
-	public String getAntiinflamatorio() {
+	public boolean getAntiinflamatorio() {
 		return antiinflamatorio;
 	}
 
-	public void setAntiinflamatorio(String antiinflamatorio) {
+	public void setAntiinflamatorio(boolean antiinflamatorio) {
 		this.antiinflamatorio = antiinflamatorio;
 	}
 
-	public String getAnalgesico() {
+	public boolean getAnalgesico() {
 		return analgesico;
 	}
 
-	public void setAnalgesico(String analgesico) {
+	public void setAnalgesico(boolean analgesico) {
 		this.analgesico = analgesico;
 	}
 
